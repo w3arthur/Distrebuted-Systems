@@ -1,0 +1,7 @@
+try to run in parralel 4002 and then 4003, and show the results on 4004
+		client 4002				client4003
+	client:send("rectangle","d", 4, 5).		client:send("triangle","c", 5).
+
+
+		client 4002
+	client:send("error function","*", 4, 5).

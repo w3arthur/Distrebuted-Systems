@@ -1,0 +1,20 @@
+			server
+server:portList().
+
+			client 4001
+client:send("message, Hi I port  4001").
+client:send("another message (from 4001)").
+
+			client 4002
+client:send("message, Hi I port  4002").
+
+			client 4001
+client:send("line","*", 5).
+client:send("rectangle","b", 4, 5).
+client:send("triangle","a", 5).
+client:send("fib",5).
+client:send("error function","*", 4, 5).
+client:exit().
+
+			server
+server:portList().
